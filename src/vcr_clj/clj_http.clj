@@ -5,7 +5,8 @@
    Main entry point is with-cassette, a macro that calls
    vcr-clj.core/with-cassette with args for overwriting
    clj-http.core/request."
-  (:require [clojure.data.codec.base64 :as b64]
+  (:require [clj-http.core]
+            [clojure.data.codec.base64 :as b64]
             [vcr-clj.core :as vcr]
             [vcr-clj.cassettes.serialization :as ser]))
 
